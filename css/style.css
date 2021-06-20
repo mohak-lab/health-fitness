@@ -1,0 +1,840 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	--main-color: #283536;
+	--primary-color: #888888;
+	--button-background: #4b709e;
+	--primary-button-background: #fe7649;
+	--background-color: #eef2f7;	
+}
+
+h1, h2 {
+	font-family: Dubai, "Ubuntu", sans-serif;
+	color: var(--main-color);
+}
+
+h4, h3 {
+	font-family: "Ubuntu", sans-serif;
+	color: var(--main-color);
+}
+
+h3 {
+	font-weight: 750;
+	font-size: 2.2rem;
+	line-height: 6rem;
+	text-transform: capitalize;
+}
+
+p, a, li, button {
+	font-family: "Ubuntu";
+	color: var(--primary-color);
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 150%;
+	font-style: normal;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	padding: 1rem 3rem;
+	border-radius: 6%;
+	border-top-left-radius: 20%;
+	border-bottom-right-radius: 20%;
+	border: none;
+	outline: none;
+	line-height: 3.6rem;
+	text-transform: capitalize;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+/*-----------------------
+our menu style
+-------------------------*/
+
+/*-----------------------
+left side menu 
+-------------------------*/
+
+header {
+	padding: 0 20rem;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 12rem;
+}
+
+header nav .left_side_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
+header nav .left_side_menu a img {
+	width: 10rem;
+	height: 5rem;
+}
+
+header nav .left_side_menu .sub_menu {
+	height: inherit;
+	display: flex;
+}
+
+header nav .left_side_menu .sub_menu a {
+	margin-right: 4rem;
+}
+
+header nav .left_side_menu .sub_menu a li {
+	font-size: 2rem;
+	line-height: 3.6rem;
+	text-transform: capitalize;
+	transition: all 0.2s;
+}
+
+header nav .left_side_menu .sub_menu a li:hover {
+	color: var(--button-background);
+}
+
+
+/*-----------------------
+right side menu 
+-------------------------*/
+
+header .right_side_menu {
+	width: 70%;
+	display: flex;
+	justify-content: end;
+}
+
+header .right_side_menu .sub_menu {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+header .right_side_menu .sub_menu a {
+	margin-right: 8rem;
+	padding: 0.7rem 2rem;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: 2rem;
+	cursor: pointer;
+	border-radius: 1rem;
+	transition: all 0.2s;
+	position: relative;
+	z-index: 9;
+}
+
+header .right_side_menu .sub_menu a li:hover {
+	color: var(--button-background);
+}
+
+header .right_side_menu .sub_menu button {
+	padding: 0.5rem 2.5rem;
+	background-color: var(--button-background);
+	color: snow;
+	position: relative;
+	z-index: 9;
+}
+
+header .right_side_menu .sub_menu button:hover {
+	background: royalblue;
+
+}
+
+/*-----------------------
+home section
+-------------------------*/
+
+/*-----------------------
+home left side section
+-------------------------*/
+
+.home_section {
+	padding: 0 20rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10rem;
+}
+
+
+.home_section .home_left_side {
+	width: 50%;
+	height: 80vh;
+	display: flex;
+	justify-content: center; 
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.home_section h1 {
+	width: 55rem;
+	font-size: 6rem;
+	line-height: 9rem;
+	margin-bottom: 5rem;
+	text-transform: capitalize;
+}
+
+.home_section p {
+	margin-bottom: 8rem;
+	width: 45rem;
+}
+
+/*.home_section a img {
+	width: 5rem;
+	height: 5rem;
+}
+
+.home_section .button_group a:first-child {
+	margin-right: 2.5rem;
+}
+*/
+/*-----------------------
+home right side section
+-------------------------*/
+
+.home_section .home_right_side {
+	width: 50%;
+	height: 100vh;
+	background-color: var(--background-color);
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 90px 20px 0px 90px;
+	background: rgba(226, 239, 255, 0.3);
+	display: flex;
+	justify-content: center; 
+}
+
+.home_section .home_right_side img {
+	width: 60rem;
+	height: 60rem;
+	margin-top: 5rem;
+}
+
+/*-----------------------
+about section
+-------------------------*/
+/*-----------------------
+about left side section
+-------------------------*/
+
+
+.common_section {
+	width: 100%;
+	height: 70rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 9rem;
+	padding: 0 20rem;
+}
+
+.common_section .about_left_side {
+	width: inherit;
+	height: inherit;
+}
+
+.common_section .about_left_side figure {
+	width: 43rem;
+	height: 50rem;
+	background-color: #f3f9ff;
+	border-radius: 20px;
+}
+
+.common_section .about_left_side img {
+	width: 40rem;
+	height: 40rem;
+	border-radius: rem;
+	margin-left: 0rem;
+	margin-top: 2.5rem;
+}
+
+/*-----------------------
+about right side section
+-------------------------*/
+
+.common_section .about_right_side {
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.common_section .about_right_side h2 {
+	width: 40rem;
+	font-style: normal;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 6.3rem;
+	margin-bottom: 3rem;
+	text-transform: capitalize;
+}
+
+.common_section .about_right_side p {
+	width: 40.3rem;
+	height: 9rem;
+	text-transform: lowercase;
+	margin-bottom: 10rem;
+}
+
+.common_section .about_right_side .common_button {
+	padding: 1rem 3rem;
+	background-color: var(--primary-button-background);
+	margin-right: 2rem;
+	color: snow;
+	transition: all 0.2s ease;
+}
+
+
+.common_section .about_right_side button:last-child {
+	color: var(--main-color);
+	background: transparent;
+}
+
+
+.common_section .about_right_side .common_button:hover {
+	background: #cc491d;
+}
+
+.common_section .about_right_side .common_button_normal {
+	transition: all 0.2s ease;
+}
+
+.common_section .about_right_side .common_button_normal:hover {
+	background: var(--primary-button-background);
+	color: snow;
+}
+
+
+/*-----------------------
+goal section
+-------------------------*/
+
+.goal_section {
+	width: 100%;
+	height: 70rem;
+	background: var(--background-color);
+	padding: 3rem 5rem;
+} 
+
+.goal_section h2 {
+	font-size: 5.5rem;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.goal_section p {
+	width: 40rem;
+	height: 9rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	margin: auto;
+}
+
+
+.goal_section .goal_task {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-column-gap: 1rem;
+}
+
+.goal_section .goal_task .task_1,
+.goal_section .goal_task .task_2,
+.goal_section .goal_task .task_3 {
+	padding-top: 2rem;
+	text-align: center;
+	transition: all 0.3s linear;
+	border-radius: 2rem;
+}
+
+
+.goal_section .goal_task .task_1 i,
+.goal_section .goal_task .task_2 i,
+.goal_section .goal_task .task_3 i {
+	font-size: 6rem;
+	margin-top: 2rem;
+	transition: all 0.2s linear;
+}
+
+.goal_section .goal_task .task_1 h3,
+.goal_section .goal_task .task_2 h3,
+.goal_section .goal_task .task_3 h3 {
+	font-size: 2.5rem;
+	text-transform: capitalize;
+	margin-top: 2rem;
+}
+
+.goal_section .goal_task .task_1:hover,
+.goal_section .goal_task .task_2:hover,
+.goal_section .goal_task .task_3:hover {
+	background: snow;
+	box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+} 
+
+.goal_section .goal_task .task_1:hover > i,
+.goal_section .goal_task .task_2:hover > i,
+.goal_section .goal_task .task_3:hover > i {
+	transform: rotate(360deg);
+}
+
+/*-----------------------
+tips section
+-------------------------*/
+
+#tips .about_right_side h2 {
+	width: 50rem;
+}
+
+/*........next........*/
+
+#section_five .about_right_side {
+	margin-left: 5rem;
+}
+
+#section_five .about_left_side img {
+	margin-left: 0;
+}
+
+#section_five .about_right_side {
+	justify-content: flex-start;
+}
+
+#section_five .about_right_side h2 {
+	width: 50rem;
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 6.3rem;
+}
+
+#section_five .about_right_side h3 {
+	text-transform: none;
+}
+
+#section_five .about_right_side p {
+	height: 2rem;
+}
+
+.fa-heart {
+	color: #f75d5d;
+}
+
+/*-----------------------
+footer section
+-------------------------*/
+
+footer {
+	width: 100%;
+	background: var(--background-color);
+	height: auto;
+	padding: 5rem 20rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+footer img {
+	width: 10rem;
+	height: 5rem;
+}
+
+footer .footer_section {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+footer div h4 {
+	font-size: 2rem;
+	text-transform: capitalize;
+}
+
+footer div a {
+	font-size: 1.7rem;
+	line-height: 150%;
+}
+
+footer .footer_div4 a {
+	font-size: 1.5rem;
+}
+
+
+/*-----------------------
+social media section
+-------------------------*/
+
+.icon_bar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+
+.icon_bar a {
+	width: 18rem;
+	background: #3b5999;
+	color: snow;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1.7rem;
+	padding: 0.5rem;
+	transition: all 0.4s linear;
+	transform: translateX(-14.5rem);
+}
+
+.icon_bar a:hover {
+	transform: translateX(0);
+}
+
+.icon_bar a .fab {
+	padding-left: 1.5rem;
+	font-size: 2rem;
+	animation: letzoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letzoom {
+	from {
+		transform: scale(0.6);
+	}
+
+	to {
+		transform: scale(0.9);
+	}
+}
+
+.icon_bar .telegram {
+	background: #00aced;	
+}
+
+.icon_bar .instagram {
+	background: #e4405f;
+}
+
+.icon_bar .linkedin {
+	background: #0077b5;
+}
+
+.icon_bar .youtube {
+	background: #cd201f;
+}
+
+
+/*-----------------------
+responsive layout section 
+-------------------------*/
+/*
+@media (max-width: 1620px) {
+	header, .home_section, .common_section {
+	 	padding: 0 12rem;
+	 }
+
+	 .home_section .home_right_side img {
+	 	width: 95rem;
+	 	height: 95rem;
+	 	margin-right: 30rem;
+	 }
+}
+*/
+@media (max-width: 1280px) {
+	header, .home_section, .common_section {
+	 	padding: 0 10rem;
+	 }
+
+	 html {
+	 	font-size: 50%;
+	 }
+
+	 .home_section .home_right_side img {
+	 	width: 80rem;
+	 	height: 80rem;
+	 	margin-right: 28rem;
+	 	margin-top: 5rem;
+	 }
+}
+
+
+@media (max-width: 980px) {
+	header, .home_section, .common_section, .goal_section {
+	 	padding: 0 8rem;
+	 }
+
+
+	.home_section .home_right_side {
+		width: 100%;
+		position: relative;
+		background: transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.home_section .home_right_side img {
+	 	width: 60rem;
+	 	height: 60rem;
+	 	margin-top: 5rem;
+	 	margin-right: 0;
+	} 
+
+	.common_section {
+		width: 100%;
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.common_section .about_right_side figure {
+		height: 55rem;
+	}
+
+
+	.common_section .about_left_side figure img{
+		height: 50rem;
+		margin-left: 5rem;
+		width: 35rem;
+	} 
+
+	.common_section .about_right_side {
+		margin-top: 6rem;
+		justify-content: start;
+		height: auto;
+	}
+
+	.common_section .about_right_side h2 {
+		font-size: 4.5rem;
+		width: 35rem;
+	}
+
+	.goal_section {
+		height: auto;
+		padding: 0 5rem;
+		padding-bottom: 5rem;
+	}
+
+	.goal_section h2 {
+		width: auto;
+		padding: 0 1rem;
+		font-size: 4.5rem;
+		line-height: 6rem;
+		padding-top: 5rem;
+	}
+
+	.goal_section .goal_task {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: 4rem;
+		padding: 0;
+	}
+
+	.goal_section .goal_task .task_1 img,
+	.goal_section .goal_task .task_2 img,
+	.goal_section .goal_task .task_3 img, {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.goal_section .goal_task .task_2 {
+		margin: 2rem 0;
+	}
+
+	#tips .about_right_side {
+		order: 2;
+	}
+
+	#tips .about_right_side h2 {
+		width: 40rem;
+	}
+
+	#tips .about_left_side img {
+		height: 38rem;
+		width: 38rem;
+	}
+
+	#section_five .about_right_side {
+		order: 2;
+	}
+
+	#section_five .about_right_side h2 {
+		width: 40rem;
+		margin-left: -5rem;
+		font-size: 4.2rem;
+	}
+
+	#section_five .about_right_side h3 {
+		margin-left: -5rem;
+	}
+
+	#section_five .about_right_side p {
+		margin-left: -5rem;
+	}
+
+	#section_five .about_left_side img {
+		height: 38rem;
+		width: 38rem;
+	}
+
+	footer {
+		width: 100%;
+		padding: 3rem 5rem;
+		display: grid;
+		grid-template-columns: none;
+	}
+
+	footer .footer_section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	footer .footer_section h4 {
+		font-size: 1.5rem;
+	}
+
+	.icon_bar {
+		top: 35%;
+	}
+
+}
+
+
+@media (max-width:  770px) {
+	 header, .home_section, .common_section {
+	 	padding: 0 5rem;
+	 }
+
+	 header nav {
+	 	padding-top: 1rem;
+	 	display: flex;
+	 	flex-flow: column;
+	 	align-items: flex-start;
+	 }
+
+	 header nav .left_side_menu {
+	 	width: 100%;
+	 	display: flex;
+	 	order: 2;
+	 }
+
+	 header nav .left_side_menu img {
+	 	display: block;
+	 	width: 100%;
+	 }
+
+	 header .left_side_menu .sub_menu {
+	 	width: 100%;
+	 	display: block;
+	 	margin-left: 2rem;
+	 }
+
+	 header nav .left_side_menu .sub_menu a {
+	 	margin-right: 2rem;
+	 }
+
+	 header nav .left_side_menu .sub_menu a li {
+	 	font-size: 1.7rem;
+	 }
+
+	 header nav .right_side_menu {
+	 	width: 100%;
+	 	order: 1;
+	 }
+
+	 header nav .right_side_menu .sub_menu a {
+	 	width: 10rem;
+	 	height: 3.5rem;
+	 	border: 0.1rem solid var(--main-color);
+	 	border-radius: 2rem;
+	 	display: flex;
+	 	justify-content: center;
+	 	align-items: center;
+	 }
+
+	 header nav .right_side_menu .sub_menu a li {
+	 	font-size: 1.5rem;
+	 	text-transform: uppercase;
+	 }
+
+	 header nav .right_side_menu .sub_menu button {
+	 	width: 13rem;
+	 	font-size: 1.5rem; 
+	 	text-transform: uppercase;
+	 }
+
+	 .home_section {
+	 	width: 100%;
+	 	height: 80vh;
+	 	display: flex;
+	 	flex-flow: column;
+	 }
+
+	 .home_section .home_left_side {
+	 	order: 2;
+	 	width: 100%;
+	 }
+
+	 .home_section .home_left_side h1 {
+	 	width: 35rem;
+	 	font-size: 5rem;
+	 	line-height: 6rem;
+	 	margin-bottom: 2rem;
+	 }
+
+
+	 .home_section .home_left_side p {
+	 	width: 35rem;
+	 	font-size: 2rem;
+	 	margin-bottom: 5rem;
+	 }
+
+	 .home_section .home_right_side {
+	 	order: 1;
+	 	/*width: 100%;*/
+	 	display: flex;
+	 	justify-content: center;
+	 	align-items: center;
+	 	position: relative;
+	 	background: transparent;
+	 }
+
+	 .home_section .home_right_side img {
+	 	width: 35rem;
+	 	height: 35rem;
+	 	margin: 0;
+	 	margin-top: 4rem;
+	 } 
+}
+
+
+
